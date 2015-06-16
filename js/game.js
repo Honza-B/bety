@@ -20,4 +20,4 @@ state.update = function(){
 }
 
 game.states.addState( state );
-game.states.switchState( 'startovni' );
+game.states.switchState( 'state' );
