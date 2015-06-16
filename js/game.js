@@ -12,4 +12,12 @@ state.create = function() {
     Kiwi.State.prototype.create.call( this );
 
     this.background = new Kiwi.GameObjects.StaticImage( this, this.textures.background, 0, 0 );
+    this.addChild(this.background);
 }
+
+state.update = function(){
+    Kiwi.State.prototype.update.call(this);
+}
+
+game.states.addState( state );
+game.states.switchState( 'startovni' );
