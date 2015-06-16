@@ -1,4 +1,4 @@
-var game = new Kiwi.Game();
+var game = new Kiwi.Game( null, 'myGame' , null , { deviceTarget: Kiwi.TARGET_COCOON } );
 var state = new Kiwi.State( 'statovni' );
 
 state.preload = function() {
