@@ -5,7 +5,7 @@ var state = new Kiwi.State( 'statovni' );
 state.preload = function() {
     Kiwi.State.prototype.preload.call(this);
 
-    this.addImage( 'background', 'assets/bg.png' );
+    this.addImage( 'background', 'bg.png' );
 }
 
 state.create = function() {
@@ -20,4 +20,4 @@ state.update = function(){
 }
 
 game.states.addState( state );
-game.states.switchState( 'state' );
+game.states.switchState( 'startovni' );
