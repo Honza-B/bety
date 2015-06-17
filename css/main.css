@@ -15,3 +15,8 @@
 		dt span { font-size: .5em; color: #777; margin-left: .5em; }
 		dd { font-size: 1.25em;	margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px solid #eee; }
 		.back-btn { float: right; margin: 0 2em 1em 0; }
+
+
+.ui-content {
+    padding: 0 !important;
+}
