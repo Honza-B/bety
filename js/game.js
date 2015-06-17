@@ -4,7 +4,7 @@ var state = new Kiwi.State( 'statovni' );
 state.preload = function() {
     Kiwi.State.prototype.preload.call(this);
 
-    this.addImage( 'background', 'bg.png' );
+    this.addImage( 'background', 'assets/bg.png' );
 }
 
 state.create = function() {
