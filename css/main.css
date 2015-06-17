@@ -6,6 +6,7 @@ body {
     -o-user-select: none;
     user-select: none;
     color: #000;
+    position: relative;
 }
 
 .main-bg {
@@ -14,6 +15,7 @@ body {
     float: left;
     position: relative;
     height: 100vh;
+    width: 100%;
 }
 
 .side-panel {
@@ -22,7 +24,7 @@ body {
     width: 0;
     background-color: #ffe20f;
     transition-duration: 0.3s;
-    position: static;
+    position: absolute;
     top: 0;
     left: 0;
     overflow: hidden;
@@ -31,4 +33,10 @@ body {
 .side-panel.open {
     height: 100vh;
     width: 434px;
+}
+
+.work-wrap {
+    margin: auto;
+    width: 1024px;
+    position: relative;
 }
