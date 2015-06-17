@@ -19,8 +19,8 @@ state.update = function(){
 }
 
 var gameOptions = {
-	width: 768,
-	height: 1024
+	width: 1024,
+	height: 768
 };
 
 var game = new Kiwi.Game('game-canvas', 'Menu', state, gameOptions);
