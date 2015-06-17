@@ -21,21 +21,21 @@ function handleTouchMove(evt) {
     var yDiff = yDown - yUp;
 
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+        var el = $('.side-panel');
+
         if ( xDiff > 0 ) {
             /* left swipe */
-            var el = $('.side-panel');
+            alert(el.text());
+            if(el.hasClass('open')) {
+                el.removeClass('open');
+            }
+        } else {
+            /* right swipe */
             alert(el.text());
             if(el.hasClass('open')) {
                 el.removeClass('open');
             } else {
                 el.addClass('open');
-            }
-        } else {
-            /* right swipe */
-            alert(el.text());
-            var el = $('.side-panel');
-            if(el.hasClass('open')) {
-                el.removeClass('open');
             }
         }
     } else {
