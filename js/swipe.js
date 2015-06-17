@@ -25,13 +25,11 @@ function handleTouchMove(evt) {
 
         if ( xDiff > 0 ) {
             /* left swipe */
-            alert(el.text());
             if(el.hasClass('open')) {
                 el.removeClass('open');
             }
         } else {
             /* right swipe */
-            alert(el.text());
             if(el.hasClass('open')) {
                 el.removeClass('open');
             } else {
