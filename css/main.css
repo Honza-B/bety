@@ -13,9 +13,10 @@ body {
 }
 
 .side-panel {
-    display: none;
+    display: block;
     height: 100vh;
-    width: 434px;
+    width: 0;
+    background-color: #ffe20f;
     transition-duration: 0.5s;
     position: static;
     top: 0;
@@ -23,7 +24,6 @@ body {
 }
 
 .side-panel.open {
-    /*height: 100vh;
-    width: 434px;*/
-    display: block;
+    height: 100vh;
+    width: 434px;
 }
