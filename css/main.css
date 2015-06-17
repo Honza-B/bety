@@ -11,6 +11,7 @@
 		#demo-page .ui-header .ui-btn {
 			background: none;
 			border: none;
+            color: #000;
 			top: 9px;
 		}
 		#demo-page .ui-header .ui-btn-inner {
