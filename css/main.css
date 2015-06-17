@@ -10,6 +10,7 @@ body {
 
 .main-bg {
     background-image: url('../assets/bg.png');
+    background-size: auto 100%;
 }
 
 .side-panel {

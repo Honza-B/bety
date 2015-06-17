@@ -7,6 +7,8 @@ var yDown = null;
 function handleTouchStart(evt) {
     xDown = evt.touches[0].clientX;
     yDown = evt.touches[0].clientY;
+
+    isOpen();
 };
 
 function handleTouchMove(evt) {
@@ -47,3 +49,11 @@ function handleTouchMove(evt) {
     xDown = null;
     yDown = null;
 };
+
+function isOpen() {
+    var el = $('.side-panel');
+
+    if(el.hasClass('open')) {
+        el.removeClass('open');
+    }
+}
