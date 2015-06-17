@@ -1,5 +1,4 @@
 //var game = new Kiwi.Game( null, 'myGame' , null , { deviceTarget: Kiwi.TARGET_COCOON } );
-var game = new Kiwi.Game( );
 var state = new Kiwi.State( 'statovni' );
 
 state.preload = function() {
@@ -19,5 +18,9 @@ state.update = function(){
     Kiwi.State.prototype.update.call(this);
 }
 
-game.states.addState( state );
-game.states.switchState( 'startovni' );
+var gameOptions = {
+	width: 768,
+	height: 1024
+};
+
+var game = new Kiwi.Game('game-canvas', 'Menu', state, gameOptions);
