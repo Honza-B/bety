@@ -1,24 +1,11 @@
-
-		/* Swipe works with mouse as well but often causes text selection. */
-		#demo-page * {
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-			-o-user-select: none;
-			user-select: none;
-            color: #000;
-		}
-
-		/* Content styling. */
-		dl { font-family: "Times New Roman", Times, serif; padding: 1em; }
-		dt { font-size: 2em; font-weight: bold; }
-		dt span { font-size: .5em; color: #777; margin-left: .5em; }
-		dd { font-size: 1.25em;	margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px solid #eee; }
-		.back-btn { float: right; margin: 0 2em 1em 0; }
-
-
-.ui-content {
-    padding: 0 !important;
+/* Swipe works with mouse as well but often causes text selection. */
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    color: #000;
 }
 
 .main-bg {
@@ -26,12 +13,17 @@
 }
 
 .side-panel {
+    display: none;
     height: 100vh;
-    width: 0;
+    width: 434px;
     transition-duration: 0.5s;
+    position: static;
+    top: 0;
+    left: 0;
 }
 
 .side-panel.open {
-    height: 100vh;
-    width: 434px;
+    /*height: 100vh;
+    width: 434px;*/
+    display: block;
 }
