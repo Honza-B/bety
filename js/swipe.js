@@ -21,12 +21,20 @@ function handleTouchMove(evt) {
     var yDiff = yDown - yUp;
 
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+        var el = $('.side-panel');
+
         if ( xDiff > 0 ) {
             /* left swipe */
-            alert("hele doleva");
+            if(el.hasClass('open')) {
+                el.removeClass('open');
+            } else {
+                el.addClass('open');
+            }
         } else {
             /* right swipe */
-            alert("hele doprava");
+            if(el.hasClass('open')) {
+                el.removeClass('open');
+            }
         }
     } else {
         if ( yDiff > 0 ) {
