@@ -6,17 +6,9 @@
 			-ms-user-select: none;
 			-o-user-select: none;
 			user-select: none;
-		}
-		/* Arrow only buttons in the header. */
-		#demo-page .ui-header .ui-btn {
-			background: none;
-			border: none;
             color: #000;
-			top: 9px;
 		}
-		#demo-page .ui-header .ui-btn-inner {
-			border: none;
-		}
+
 		/* Content styling. */
 		dl { font-family: "Times New Roman", Times, serif; padding: 1em; }
 		dt { font-size: 2em; font-weight: bold; }
