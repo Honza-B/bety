@@ -110,7 +110,7 @@ body {
     left: 0;
     height: 100vh;
     width: 100%;
-    z-index: 5000;
+    z-index: 6000;
 }
 
 .start-page {
@@ -261,7 +261,7 @@ body {
 
 .kids-page {
     z-index: 5004;
-    //display: none;
+    display: none;
 }
 
 .kids-midlle-container {
@@ -304,8 +304,8 @@ body {
     text-align: right;
     height: 0;
     overflow: hidden;
-    padding-top: 15px;
+    padding-top: 14px;
     font-size: 18px;
-    line-height: 1;
+    line-height: 0.9;
     transition-duration: .3s;
 }

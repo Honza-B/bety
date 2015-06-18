@@ -28,3 +28,7 @@ $('.kid-add-name').click(function() {
         'height' : '32px'
     });
 });
+
+$('.kids-name').click(function() {
+    $('.kids-page, .parents-page, .start-page').css('display','none');
+});
