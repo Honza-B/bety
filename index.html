@@ -13,7 +13,7 @@
     <body>
         <div class="side-panel">dobrej</div>
         <div class="start-bg"></div>
-        <div class="start-page">
+        <div class="start-page menu-page">
             <div class="start-page-wrap">
                 <div class="midlle-container">
                     <div class="start-title">aplikace<br>na předcházení<br>dyslexie</div>
@@ -21,9 +21,32 @@
                     <p>aplikace podporuje teorii učení hrou</p>
                     <p>vhodnou stimulací dítěte v předškolním<br>věku lze předcházet výskytu<br>specifických poruch učení</p>
                 </div>
+                <div class="next-btn start-btn-next">
+                    <div class="next-btn-cyrcle"></div>
+                    <div class="next-btn-title">další</div>
+                </div>
+            </div>
+        </div>
+        <div class="parents-page menu-page">
+            <div class="start-page-wrap">
+                <div class="midlle-container">
+                    <p>součástí aplikace je</p>
+                    <div class="start-title">rodičovská kontrola</div>
+                    <p>rodič dostává informace<br>o případných problémech dítěte. Čím více puntíků,<br>tím se dítěti lépe daří</p>
+                    <img src="assets/parents-dots.png" class="parents-chart">
+                    <div class="parents-pass">
+                        <p class="parents-pass-title">nastavení hesla</p>
+                        <input type="text" placeholder="heslo">
+                        <input type="text" placeholder="potvrzeni hesla">
+                    </div>
+                </div>
                 <div class="next-btn">
                     <div class="next-btn-cyrcle"></div>
                     <div class="next-btn-title">další</div>
+                </div>
+                <div class="prev-btn parents-btn-prev">
+                    <div class="next-btn-cyrcle"></div>
+                    <div class="next-btn-title">zpět</div>
                 </div>
             </div>
         </div>
@@ -83,5 +106,6 @@
             skrollr.menu.init(s);
         </script>
         <script src="js/swipe.js"></script>
+        <script src="js/menu.js"></script>
     </body>
 </html>

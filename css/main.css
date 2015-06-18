@@ -32,7 +32,7 @@ body {
 }
 
 .side-panel {
-    z-index: 5003;
+    z-index: 4550;
     display: block;
     height: 100vh;
     width: 0;
@@ -114,16 +114,7 @@ body {
 }
 
 .start-page {
-    font-family: Dederon Light;
-    color: #f0a01d;
     z-index: 5002;
-    display: block;
-    height: 100vh;
-    width: 100%;
-    background-color: #ffe20f;
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 .start-page-wrap {
@@ -139,6 +130,10 @@ body {
     width: 450px;
     margin-left: 175px;
     margin-top: -192px;
+}
+
+.parents-page .midlle-container {
+    width: 650px;
 }
 
 .midlle-container p {
@@ -181,4 +176,76 @@ body {
 .next-btn-title {
     margin-top: 6px;
     font-size: 20px;
+}
+
+.menu-page {
+    font-family: Dederon Light;
+    color: #f0a01d;
+    z-index: 5002;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffe20f;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.parents-page {
+    z-index: 5003;
+    display: none;
+}
+
+.parents-pass input::-webkit-input-placeholder {
+   color: #ffe20f;
+}
+
+.parents-pass input:-moz-placeholder { /* Firefox 18- */
+   color: #ffe20f;
+}
+
+.parents-pass input::-moz-placeholder {  /* Firefox 19+ */
+   color: #ffe20f;
+}
+
+.parents-pass input:-ms-input-placeholder {
+   color: #ffe20f;
+}
+
+.parents-pass input {
+    border: 0;
+    font-size: 28px;
+    line-height: 32px;
+    padding-bottom: 1px;
+    border-radius: 16px;
+    padding-left: 25px;
+    width: 288px;
+}
+
+.parents-pass input:last-of-type {
+    margin-left: 30px;
+    background-image: url(../assets/parents-pass-plus.png);
+    background-repeat: no-repeat;
+    background-position: 263px 50%;
+}
+.parents-pass-title {
+    width: 400px;
+    border-top: 1px #f0a01d dashed;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.parents-chart {
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.prev-btn {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
+.prev-btn .next-btn-cyrcle {
+    transform: rotateZ(-180deg);
 }
