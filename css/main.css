@@ -309,3 +309,7 @@ body {
     line-height: 0.9;
     transition-duration: .3s;
 }
+
+#preload {
+    display: none;
+}
