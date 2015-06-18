@@ -255,6 +255,8 @@ body {
 
 .prev-btn .next-btn-cyrcle {
     transform: rotateZ(-180deg);
+    -ms-transform: rotateZ(-180deg); /* IE 9 */
+    -webkit-transform: rotateZ(-180deg); /* Chrome, Safari, Opera */
 }
 
 .kids-page {
