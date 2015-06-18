@@ -14,7 +14,8 @@ $('.parents-btn-next, .side-panel-menu').click(function() {
 });
 
 $('.kids-name').click(function() {
-    $('.menu-page').css('display','none');
+    $('.side-panel').removeClass('open');
+    $('.menu-page').delay(300).css('display','none');
 });
 
 $('.kid-add-name').click(function() {
@@ -30,4 +31,12 @@ $('.kid-add-name').click(function() {
     $('.kids-age').css({
         'height' : '32px'
     });
+});
+
+$('.logout-onclick').click(function() {
+    $('.loged-panel').css('display','block');
+});
+
+$('.side-panel-cancel').click(function() {
+    $('.loged-panel').css('display','none');
 });

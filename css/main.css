@@ -191,7 +191,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    display: none !important;
+    //display: none !important;
 }
 
 .parents-page {
@@ -328,11 +328,32 @@ body {
 }
 
 .loguot-panel {
-    display: none;
 }
 
 .sp-karlik {
     position: absolute;
     right: 60px;
     top: 60px;
+}
+
+.loged-rest {
+    position: absolute;
+    top: 185px;
+    left: 0;
+}
+
+.loged-panel {
+    display: none;
+}
+
+.logout-rest {
+    position: absolute;
+    top: 185px;
+    left: 0;
+}
+
+.logout-onclick {
+    position: absolute;
+    top: 400px;
+    left: 0;
 }
