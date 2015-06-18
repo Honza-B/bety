@@ -1,10 +1,10 @@
 ( function( $ ) {
 
-	$window = $(window);
+	/*$window = $(window);
 	$htmlbody = $('html,body');
 	$slide = $('#slide-1');
-	$slide2 = $('#slide-2');
-	$body = $('body');
+	$slide2 = $('#slide-2');*/
+	$body = $('.start-bg');
 	$preload = $('#preload');
 
 	//FadeIn all sections
@@ -13,37 +13,15 @@
 
 			adjustWindow();
 
-			$body.removeClass('loading').addClass('loaded');
+			$body.css('display','none');
 
 		}, 800);
 	});
 
 	function adjustWindow(){
 
-		var s = skrollr.init({
-			forceHeight: false,
-			render: function(data) {
-				//Log the current scroll position.
-				//console.log(data.curTop);
-				//$('#info').text(data.curTop);
-			}
-		});
-
-		// get window size
-	    winW = $window.width();
-	    winH = $window.height();
-
-	    slideH = winH;
-
-	    if(slideH <= 550) {
-			slideH = 550;
-		}
-
-	    $slide.height(17500);
-	    $slide2.height(20700);
-
-	    s.refresh($('.homeSlide'));
-
+		var s = skrollr.init();
+        skrollr.menu.init(s);
 	}
 
 } )( jQuery );
