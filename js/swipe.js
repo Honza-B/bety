@@ -8,7 +8,7 @@ function handleTouchStart(evt) {
     xDown = evt.touches[0].clientX;
     yDown = evt.touches[0].clientY;
 
-    isOpen();
+    //isOpen();
 };
 
 function handleTouchMove(evt) {

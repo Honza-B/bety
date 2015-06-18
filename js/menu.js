@@ -1,17 +1,20 @@
 $('.start-btn-next, .kids-btn-prev').click(function() {
+    $('.menu-page').css('display','none');
     $('.parents-page').css('display','block');
 });
 
 $('.parents-btn-prev').click(function() {
     $('.parents-page').css('display','none');
+    $('.start-page').css('display','block');
 });
 
-$('.parents-btn-next').click(function() {
+$('.parents-btn-next, .side-panel-menu').click(function() {
+    $('.menu-page').css('display','none');
     $('.kids-page').css('display','block');
 });
 
-$('.kids-btn-prev').click(function() {
-    $('.kids-page').css('display','none');
+$('.kids-name').click(function() {
+    $('.menu-page').css('display','none');
 });
 
 $('.kid-add-name').click(function() {
@@ -27,8 +30,4 @@ $('.kid-add-name').click(function() {
     $('.kids-age').css({
         'height' : '32px'
     });
-});
-
-$('.kids-name').click(function() {
-    $('.kids-page, .parents-page, .start-page').css('display','none');
 });
