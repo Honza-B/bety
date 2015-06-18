@@ -196,26 +196,32 @@ body {
     display: none;
 }
 
-.parents-pass input::-webkit-input-placeholder {
+.parents-pass input::-webkit-input-placeholder,
+.kid-add-name::-webkit-input-placeholder {
    color: #ffe20f;
 }
 
-.parents-pass input:-moz-placeholder { /* Firefox 18- */
+.parents-pass input:-moz-placeholder,
+.kid-add-name:-moz-placeholder { /* Firefox 18- */
    color: #ffe20f;
 }
 
-.parents-pass input::-moz-placeholder {  /* Firefox 19+ */
+.parents-pass input::-moz-placeholder,  /* Firefox 19+ */
+.kid-add-name::-moz-placeholder {  /* Firefox 19+ */
    color: #ffe20f;
 }
 
-.parents-pass input:-ms-input-placeholder {
+.parents-pass input:-ms-input-placeholder,
+.kid-add-name:-ms-input-placeholder {
    color: #ffe20f;
 }
 
-.parents-pass input {
+.parents-pass input,
+.kid-add-name {
     border: 0;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 32px;
+    height: 32px;
     padding-bottom: 1px;
     border-radius: 16px;
     padding-left: 25px;
@@ -228,6 +234,7 @@ body {
     background-repeat: no-repeat;
     background-position: 263px 50%;
 }
+
 .parents-pass-title {
     width: 400px;
     border-top: 1px #f0a01d dashed;
@@ -248,4 +255,55 @@ body {
 
 .prev-btn .next-btn-cyrcle {
     transform: rotateZ(-180deg);
+}
+
+.kids-page {
+    z-index: 5004;
+    //display: none;
+}
+
+.kids-midlle-container {
+    right: 175px;
+    width: auto;
+}
+
+.kids-name {
+    width: 200px;
+    line-height: 150px;
+    font-size: 42px;
+    border-bottom: 1px #f0a01d dashed;
+    text-align: right;
+}
+
+.kid-add-name {
+    padding-left: 33px;
+    width: 33px;
+    background-image: url(../assets/parents-pass-plus.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    float: right;
+    transition-duration: .3s;
+    margin-left: 12px;
+}
+.kids-add-name {
+    margin-top: 60px;
+}
+
+.kid-add-title {
+    font-size: 16px;
+    line-height: 33px;
+    float: right;
+    transition-duration: .3s;
+    overflow: hidden;
+}
+
+.kids-age {
+    clear: both;
+    text-align: right;
+    height: 0;
+    overflow: hidden;
+    padding-top: 15px;
+    font-size: 18px;
+    line-height: 1;
+    transition-duration: .3s;
 }
