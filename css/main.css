@@ -423,3 +423,21 @@ body {
     height: 476px;
     background-image: url('../assets/03/deda-venku.png');
 }
+
+.svetla {
+    z-index: 4502;
+    position: fixed;
+    left: 149px;
+    width: 143px;
+    height: 111px;
+    background-image: url('../assets/04/svetla.png');
+}
+
+.tmave {
+    z-index: 4502;
+    position: fixed;
+    left: 149px;
+    width: 143px;
+    height: 111px;
+    background-image: url('../assets/05/tmavy.png');
+}
