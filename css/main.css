@@ -96,7 +96,7 @@ body {
 
 .koule {
     position: fixed;
-    z-index: 4549;
+    z-index: 4539;
     width: 60px;
     height: 60px;
     border-radius: 30px;
@@ -434,10 +434,57 @@ body {
 }
 
 .tmave {
-    z-index: 4502;
+    z-index: 4508;
     position: fixed;
-    left: 149px;
-    width: 143px;
-    height: 111px;
+    left: 0px;
+    width: 1024px;
+    height: 768px;
     background-image: url('../assets/05/tmavy.png');
+}
+
+.tmave.close {
+    display: none !important;
+}
+
+.mavani {
+    z-index: 4507;
+    position: fixed;
+    left: 42px;
+    width: 416px;
+    height: 479px;
+    background-image: url('../assets/05/mavani.png');
+}
+
+.dialog {
+    z-index: 4554;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 779px;
+    height: 583px;
+    margin-left: -385px;
+    margin-top: -292px;
+    background-image: url('../assets/05/dialog.png');
+}
+
+.dialog.close {
+    display: none !important;
+}
+
+.dialog-close {
+    z-index: 4555;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+}
+
+.hvezda {
+    position: fixed;
+    z-index: 4509;
+    width: 120px;
+    height: 120px;
+    right: 150px;
+    top: 15px;
 }

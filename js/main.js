@@ -29,3 +29,11 @@
 	}
 
 } )( jQuery );
+
+$('.dialog-close').click(function() {
+    $('.dialog').addClass('close');
+});
+
+$('.hvezda').click(function() {
+    $('.tmave').addClass('close');
+});
