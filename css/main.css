@@ -415,3 +415,11 @@ body {
     background-image: url('../assets/02/05.png');
     background-repeat: no-repeat;
 }
+
+.deda {
+    z-index: 4502;
+    position: fixed;
+    width: 422px;
+    height: 476px;
+    background-image: url('../assets/03/deda-venku.png');
+}
