@@ -20,7 +20,11 @@
 
 	function adjustWindow(){
 
-		var s = skrollr.init();
+		var s = skrollr.init({
+            render: function(data) {
+                $('#cur').text(data.curTop);
+            }
+        });
         skrollr.menu.init(s);
 	}
 

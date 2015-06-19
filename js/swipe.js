@@ -53,7 +53,7 @@ function handleTouchMove(evt) {
 function isOpen() {
     var el = $('.side-panel');
 
-    if(el.hasClass('open')) {
+    if(el.hasClass('open') && xDown > 434) {
         el.removeClass('open');
     }
 }
