@@ -24,6 +24,8 @@
             render: function(data) {
                 if(data.curTop > 15000) {
                     $('.koule').addClass('close');
+                } else {
+                    $('.koule').removeClass('close');
                 }
             }
         });
