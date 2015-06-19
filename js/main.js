@@ -15,14 +15,16 @@
 
 			$body.css('display','none');
 
-		}, 800);
+		}, 2000);
 	});
 
 	function adjustWindow(){
 
 		var s = skrollr.init({
             render: function(data) {
-                $('#cur').text(data.curTop);
+                if(data.curTop > 15000) {
+                    $('.koule').addClass('close');
+                }
             }
         });
         skrollr.menu.init(s);

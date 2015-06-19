@@ -103,6 +103,10 @@ body {
     background-color: #ffe20f;
 }
 
+.koule.close {
+    display: none !important;
+}
+
 .start-bg {
     background-image: url('../assets/start/bg.jpg');
     background-size: 100% auto;
